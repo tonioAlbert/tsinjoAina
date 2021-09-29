@@ -1,0 +1,5 @@
+//MO004-005.TXT ANA00004 TO ANA00005
+groupement		EXT	DLL	nouvelle extension  DLL
+ong		EXT	DLL	nouvelle extension  DLL
+reseaux		EXT	DLL	nouvelle extension  DLL
+utilisateurs		EXT	DLL	nouvelle extension  DLL

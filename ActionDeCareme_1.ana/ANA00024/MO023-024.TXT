@@ -1,0 +1,3 @@
+//MO023-024.TXT ANA00023 TO ANA00024
+groupement		TAR	4745	nouvelle taille enregistrement : 4745
+groupement	zzzzzzzagromenageouinon	CNW	Booléen$Chaîne	la rubrique zzzzzzzagromenageouinon a pour nouveau type Booléen

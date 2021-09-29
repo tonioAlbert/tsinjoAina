@@ -1,0 +1,4 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+groupement__2		NFI		nouveau fichier
+Connexion HFSQL Classic		CNX+		
+groupement__2		FRN		

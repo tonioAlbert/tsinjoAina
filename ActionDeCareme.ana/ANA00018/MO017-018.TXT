@@ -1,0 +1,8 @@
+//MO017-018.TXT ANA00017 TO ANA00018
+groupement		TAR	5229	nouvelle taille enregistrement : 5229
+groupement	zzzzzzfemnutr	RUB+		zzzzzzfemnutr est une nouvelle rubrique
+groupement	zzzzzzhomnutr	RUB+		zzzzzzhomnutr est une nouvelle rubrique
+groupement	zzzzzzzagroecologie	RUB+		zzzzzzzagroecologie est une nouvelle rubrique
+groupement	zzzzzzzf26	RUB+		zzzzzzzf26 est une nouvelle rubrique
+groupement	zzzzzzzm26	RUB+		zzzzzzzm26 est une nouvelle rubrique
+groupement	zzzzzzznbmenage	RUB+		zzzzzzznbmenage est une nouvelle rubrique

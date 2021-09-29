@@ -1,0 +1,3 @@
+//MO014-015.TXT ANA00014 TO ANA00015
+groupement		TAR	4022	nouvelle taille enregistrement : 4022
+groupement	zzzzzid_ap	RUB+		zzzzzid_ap est une nouvelle rubrique

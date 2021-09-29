@@ -1,0 +1,11 @@
+;PCSoft - Hyper File V7.00 - REP V7.00
+;Do not edit. Please use specific tools.
+ANALYSISGUID=A	;Analysis GUID
+LOCALIZATION_UTF8=3C86CB7909AF4F40AB85972BE266E198	utilisateurs	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\utilisateurs.FIC
+LOCALIZATION_UTF8=AE6B4CAFE511451FAEBCEC62B2DFFDC4	groupement	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\groupement.FIC
+LOCALIZATION_UTF8=B322B7B4AC7D498F89F849C9E1B7B5CA	reseaux	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\reseaux.FIC
+LOCALIZATION_UTF8=3C86CB7909AF4F40AB85972BE266E198	utilisateurs	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\utilisateurs.ACM
+LOCALIZATION_UTF8=AE6B4CAFE511451FAEBCEC62B2DFFDC4	groupement	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\groupement.ACM
+LOCALIZATION_UTF8=3C86CB7909AF4F40AB85972BE266E198	utilisateurs	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\utilisateurs.DLL
+LOCALIZATION_UTF8=AE6B4CAFE511451FAEBCEC62B2DFFDC4	groupement	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\groupement.DLL
+LOCALIZATION_UTF8=B322B7B4AC7D498F89F849C9E1B7B5CA	reseaux	C:\Mes Projets\ActionDeCareme\Exe\Exécutable Windows 32 bits\reseaux.DLL

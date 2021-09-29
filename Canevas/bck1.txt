@@ -1,0 +1,59 @@
+
+// ========================================================== TROISIEME LIGNE ==============================================================================================
+alphabetPremiereLinge est un tableau de chaînes = ["D7", "E7", "F7", "G7", "H7", "I7", "J7" ,"K7", "L7", "M7", "N7", "O7", "P7", "Q7" ,"R7", ...
+"S7", "T7", "U7", "V7", "W7", "X7", "Y7", "Z7", "AA7", "AB7", "AC7","AD7", "AE7", "AF7", "AG7", "AH7", "AI7", "AJ7" ,"AK7", "AL7", "AM7", "AN7", "AO7", "AP7", "AQ7" ,"AR7", ...
+"AS7", "AT7", "AU7", "AV7", "AW7", "AX7", "AY7", "AZ7", "BB7", "BC7","BD7", "BE7", "BF7", "BG7", "BH7", "BI7", "BJ7" ,"BK7", "BL7", "BM7", "BN7", "BO7", "BP7", "BQ7" ,"BR7", ...
+"BS7", "BT7", "BU7", "BV7", "BW7", "BX7", "BY7", "BZ7", "CB7", "CC7","CD7", "CE7", "CF7", "CG7", "CH7", "CI7", "CJ7" ,"CK7", "CL7", "CM7", "CN7", "CO7", "CP7", "CQ7" ,"CR7", ...
+"CS7", "CT7", "CU7", "CV7", "CW7", "CX7", "CY7", "CZ7", "DB7", "DC7","DD7", "DE7", "DF7", "DG7", "DH7", "DI7", "DJ7" ,"DK7", "DL7", "DM7", "DN7", "DO7", "DP7", "DQ7" ,"DR7", ...
+"DS7", "DT7", "DU7", "DV7", "DW7", "DX7", "DY7", "DZ7", "EB7", "EC7","ED7", "EE7", "EF7", "EG7", "EH7", "EI7", "EJ7" ,"EK7", "EL7", "EM7", "EN7", "EO7", "EP7", "EQ7" ,"ER7", ...
+"ES7", "ET7", "EU7", "EV7", "EW7", "EX7", "EY7", "EZ7"]
+
+debutTableauTroisiemeLigne est un chaîne = ""
+milieuTableauTroisiemeLigne est un chaîne = ""
+finTableauTroisiemeLigne est un chaîne = ""
+numPremiereLigne = 1
+nomAnnees = ""
+tableauNombreGroupementCreer est un tableau d'entiers = [0]
+
+
+POUR i  = 1 À colonneAnneeACreer
+	
+	nomAnnees = tableauAnnees[i]
+	
+	debutTableauPremiereLigne  = alphabetPremiereLinge[numPremiereLigne]
+	milieuTableauPremiereLigne = alphabetPremiereLinge[numPremiereLigne+1]
+	finTableauPremiereLigne  = alphabetPremiereLinge[numPremiereLigne+2]
+	
+	
+	HExécuteRequête(_COORDO_Get_Nombre_Groupement_With_Year, hRequêteDéfaut, nomAnnees, "OUI")
+	HLitPremier(_COORDO_Get_Nombre_Groupement_With_Year)
+	TANTQUE HTrouve(_COORDO_Get_Nombre_Groupement_With_Year)
+		
+		tableauNombreGroupementCreer.Ajoute(_COORDO_Get_Nombre_Groupement_With_Year.nombre_de_groupement)
+		
+		HLitSuivant(_COORDO_Get_Nombre_Groupement_With_Year)
+	FIN
+	
+	
+	Tableur_stats[milieuTableauPremiereLigne] = Somme(tableauNombreGroupementCreer)
+	//INCREMENTATION PAR TROIS (3) DES COLONNES
+	numPremiereLigne = numPremiereLigne + 3
+	
+	TableurSelectMoins(Tableur_stats)
+	
+	// SELECTIONNER LA PLAGES DES CELLULES A FUSIONNER
+	TableurSelectPlus(Tableur_stats, debutTableauPremiereLigne, finTableauPremiereLigne)
+	
+	// Fusion des cellules
+	FAAExécute(Tableur_stats, faaTableurFusion)
+	
+	
+	nomAnnees = ""
+	tableauNombreGroupementCreer = [0]
+	debutTableauPremiereLigne = ""
+	milieuTableauPremiereLigne = ""
+	finTableauPremiereLigne  = ""
+	
+FIN
+
+

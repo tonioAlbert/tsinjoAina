@@ -1,0 +1,4 @@
+//MO007-008.TXT ANA00007 TO ANA00008
+groupement		TAR	4311	nouvelle taille enregistrement : 4311
+groupement	DateOnliene	RUB+		DateOnliene est une nouvelle rubrique
+groupement	HeureOneline	RUB+		HeureOneline est une nouvelle rubrique

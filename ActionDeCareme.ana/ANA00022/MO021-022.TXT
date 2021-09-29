@@ -1,0 +1,9 @@
+//MO021-022.TXT ANA00021 TO ANA00022
+groupement		TAR	4158	nouvelle taille enregistrement : 4158
+groupement	zzzzzzfemnutr	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzfemnutr a pour nouveau type Entier sur 4 octets
+groupement	zzzzzzhomnutr	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzhomnutr a pour nouveau type Entier sur 4 octets
+groupement	zzzzzzzf26	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzzf26 a pour nouveau type Entier sur 4 octets
+groupement	zzzzzzzm26	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzzm26 a pour nouveau type Entier sur 4 octets
+groupement	zzzzzzznbmenage	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzznbmenage a pour nouveau type Entier sur 4 octets
+groupement	zzzzzzzzagrofem	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzzzagrofem a pour nouveau type Entier sur 4 octets
+groupement	zzzzzzzzagrohom	CNW	Entier sur 4 octets$Chaîne	la rubrique zzzzzzzzagrohom a pour nouveau type Entier sur 4 octets

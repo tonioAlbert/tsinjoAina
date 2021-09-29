@@ -1,0 +1,3 @@
+//MO016-017.TXT ANA00016 TO ANA00017
+utilisateurs		TAR	1278	nouvelle taille enregistrement : 1278
+utilisateurs	fonctionuser	RUB+		fonctionuser est une nouvelle rubrique

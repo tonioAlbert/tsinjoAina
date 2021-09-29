@@ -1,0 +1,3 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+reseaux		TAR	1332	nouvelle taille enregistrement : 1332
+reseaux	online	RUB+		online est une nouvelle rubrique

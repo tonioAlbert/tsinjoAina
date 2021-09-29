@@ -1,0 +1,6 @@
+//MO020-021.TXT ANA00020 TO ANA00021
+groupement		TAR	4293	nouvelle taille enregistrement : 4293
+groupement	zzzzzzzagromenage	RUB+		zzzzzzzagromenage est une nouvelle rubrique
+groupement	zzzzzzzagromenageouinon	RUB+		zzzzzzzagromenageouinon est une nouvelle rubrique
+groupement	zzzzzzzeaupompefemme	RUB+		zzzzzzzeaupompefemme est une nouvelle rubrique
+groupement	zzzzzzzeaupompehomme	RUB+		zzzzzzzeaupompehomme est une nouvelle rubrique

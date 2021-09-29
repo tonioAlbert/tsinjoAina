@@ -1,0 +1,5 @@
+//MO005-006.TXT ANA00005 TO ANA00006
+utilisateurs		TAR	925	nouvelle taille enregistrement : 925
+utilisateurs	type_user	NNR	type	ATTENTION : la clé type a pour nouveau nom type_user
+utilisateurs	type_user	TAI-	50	la rubrique type_user a comme nouvelle taille 51 au lieu de 101
+utilisateurs	ong	RUB+		ong est une nouvelle clé

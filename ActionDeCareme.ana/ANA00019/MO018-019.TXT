@@ -1,0 +1,2 @@
+//MO018-019.TXT ANA00018 TO ANA00019
+groupement	nb_26	NNR	nb_Moins_26	ATTENTION : la rubrique nb_Moins_26 a pour nouveau nom nb_26

@@ -1,0 +1,435 @@
+
+maRESTRequette est un restRequête
+laRéponse est un restRéponse
+maRESTRequette.Méthode = httpPatch
+NewContent est une chaîne
+
+newUrl est une chaîne = "https://globy-3b218.firebaseio.com/tsinjoaina501db/"+id+".json"
+
+Info("URL : " + newUrl)
+
+maRESTRequette.URL = newUrl
+
+//Info("Commune Ancien : "+SAI_Commune)
+
+n_sexe1 , n_sexe2, n_sexe3, n_sexe4, n_date_autonomisation est une chaîne
+
+
+
+NewContent = "{"""
+
+
+
+c_details est chaîne = ""
+n_details est chaîne = ""
+
+
+SI int_autres..Valeur = 0 ALORS
+	
+	c_details = "NON"
+	n_details = ""
+SINON
+	c_details = "OUI"
+	n_details = SAI_Détails_Autres..Valeur
+FIN
+
+NewContent+= "act_autre"":"""  + c_details   +""","
+NewContent+= """act_autre_details"":"""  + n_details   +""","
+
+
+
+n_act_champ_commun est chaîne = ""
+SI int_champ_commun..Valeur = 0 ALORS
+	n_act_champ_commun = "NON"
+SINON
+	n_act_champ_commun = "OUI"
+FIN
+NewContent+="""act_champ_commun"":"""  +  n_act_champ_commun  +""","
+
+
+
+n_act_entraide_rotative est chaîne = ""
+SI int_entraide_rotative..Valeur = 0 ALORS
+	n_act_entraide_rotative = "NON"
+SINON
+	n_act_entraide_rotative = "OUI"
+FIN
+NewContent+="""act_entraide_rotative"":"""  +  n_act_entraide_rotative  +""","
+
+
+
+n_act_epargne_en_monnaie est chaîne = ""
+SI int_epargne_monaie..Valeur = 0 ALORS
+	n_act_epargne_en_monnaie = "NON"
+SINON
+	n_act_epargne_en_monnaie = "OUI"
+FIN
+NewContent+="""act_epargne_en_monnaie"":"""  +  n_act_epargne_en_monnaie   +""","
+
+
+
+
+n_act_epargne_en_production est chaîne = ""
+SI int_epargne_en_production..Valeur = 0 ALORS
+	n_act_epargne_en_production = "NON"
+SINON
+	n_act_epargne_en_production = "OUI"
+FIN
+NewContent+="""act_epargne_en_production"":"""  +  n_act_epargne_en_production   +""","
+
+
+NewContent+="""cate_grpm"":"""  +  tabCat[COMB_Catégorie..Valeur]   +""","
+
+
+NewContent += """commune"":"
+NewContent += """"
+NewContent += SAI_Commune..Valeur
+NewContent += ""","
+
+Annee est une chaîne = Gauche(SAI_Date_de_création..Valeur,4)
+mois est une chaîne = Droite(Gauche(SAI_Date_de_création..Valeur,6),2)
+jour est une chaîne = Droite(SAI_Date_de_création..Valeur,2)
+
+NewContent += """date_de_cre"":"
+NewContent += """"
+NewContent += jour+"/"+mois+"/"+Annee
+NewContent += ""","
+
+
+
+
+SI SAI_Date_d_autonomisation..Valeur = "//" ALORS
+	n_date_autonomisation = "//"
+SINON
+	
+	Annee_auto est une chaîne = Gauche(SAI_Date_d_autonomisation..Valeur,4)
+	mois_auto est une chaîne = Droite(Gauche(SAI_Date_d_autonomisation..Valeur,6),2)
+	jour_auto est une chaîne = Droite(SAI_Date_d_autonomisation..Valeur,2)
+	
+	//n_date_autonomisation = Remplace(SAI_Date_d_autonomisation, "-", "/")
+	
+	n_date_autonomisation = jour_auto+"/"+mois_auto+"/"+Annee_auto
+FIN
+
+NewContent += """dateautonomisation"":"
+NewContent += """"
+NewContent +=  n_date_autonomisation
+NewContent += ""","
+
+
+
+NewContent += """district"":"
+NewContent += """"
+NewContent += SAI_District..Valeur
+NewContent += ""","
+
+
+
+
+NewContent+="""femme_desend"":"""  +  SAI_Femme_désendetter..Valeur   +""","
+NewContent+="""femme_resp"":"""  +  SAI_Femme_Responsable..Valeur   +""","
+
+
+NewContent += """fokontany"":"
+NewContent += """"
+NewContent += SAI_Fokontany..Valeur
+NewContent += ""","
+
+
+
+NewContent+="""homme_desend"":"""  +  SAI_Homme_désendetter..Valeur   +""","
+NewContent+="""id"":"""  +  id   +""","
+
+NewContent += """id_reseau"":"
+NewContent += """"
+NewContent += SAI_reseaux..Valeur
+NewContent += ""","
+
+
+NewContent += """insec_enq_1"":"
+NewContent += """"
+NewContent += tabComboInsc[COMB_insec_enq_1..Valeur]
+NewContent += ""","
+
+
+NewContent += """insec_enq_2"":"
+NewContent += """"
+NewContent += tabComboInsc[COMB_insec_enq_2..Valeur]
+NewContent += ""","
+
+
+NewContent += """insec_enq_3"":"
+NewContent += """"
+NewContent += tabComboInsc[COMB_insec_enq_3..Valeur]
+NewContent += ""","
+
+
+
+NewContent += """insec_enq_4"":"
+NewContent += """"
+NewContent += tabComboInsc[COMB_insec_enq_4..Valeur]
+NewContent += ""","
+
+
+
+
+NewContent+="""jeune_resp"":"""  +  SAI_Jeune_Responsable..Valeur   +""","
+NewContent+="""lat"":"""  +  lat..Valeur  +""","
+NewContent+="""lng"":"""  +  lng..Valeur   +""","
+NewContent+="""modifierid"":"""  +  modifierid..Valeur   +""","
+NewContent+="""nb_26"":"""  +  SAI_Nombre_Moins_26_ans..Valeur   +""","
+NewContent+="""nb_femme"":"""  +  SAI_Nombre_Femme..Valeur   +""","
+NewContent+="""nb_homme"":"""  +  SAI_Nombre_Homme..Valeur   +""","
+
+
+
+NewContent += """nom_al"":"
+NewContent += """"
+NewContent += SAI_NomAnimateur..Valeur
+NewContent += ""","
+
+
+
+NewContent += """nom_enq_1"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_1..Valeur
+NewContent += ""","
+
+
+
+NewContent += """nom_enq_2"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_2..Valeur
+NewContent += ""","
+
+
+
+
+NewContent += """nom_enq_3"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_3..Valeur
+NewContent += ""","
+
+
+
+NewContent += """nom_enq_4"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_4..Valeur
+NewContent += ""","
+
+
+
+NewContent += """nom_grpm"":"
+NewContent += """"
+//NewContent += SAI_Nom_Groupement..Valeur+params[45]
+NewContent += SAI_Nom_Groupement..Valeur
+NewContent += ""","
+
+
+
+
+
+NewContent += """phone_al"":"
+NewContent += """"
+NewContent += SAI_Numero_Telephone_Animateur..Valeur
+NewContent += ""","
+
+
+
+
+NewContent += """pres_grpm"":"
+NewContent += """"
+NewContent += SAI_Président..Valeur
+NewContent += ""","
+
+
+
+
+NewContent+="""secr_grpm"":"""  +  SAI_Secrétaire..Valeur   +""","
+
+
+
+
+
+//Info(TypeVar(sexe_eng_1..Valeur))
+SI (SAI_Nom_Enqueteur_1..Valeur = "" )   ALORS
+	//Info("Nom Enquêter 1 mais sexe sélectionner ! \n Valeur sexe à été remise à zéro !")
+	n_sexe1 = ""
+	//retour
+	
+	
+SINON SI (sexe_eng_1..Valeur = -1 ET SAI_Nom_Enqueteur_1..Valeur <> "" )
+	
+	Info("Nom Enquêter Non vide !. Veuillez S.V.P sélectionner le sexe de l’enquêteur 1 !")
+	RETOUR
+SINON
+	n_sexe1 = sexe_eng_1..Valeur
+FIN
+
+NewContent += """nom_enq_1"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_1..Valeur
+NewContent += ""","
+
+NewContent += """sexe_enq_1"":"
+NewContent += """"
+NewContent += Majuscule(Gauche(n_sexe1,1)) + Milieu(n_sexe1,2)
+NewContent += ""","
+
+
+
+//info("valeur sexe 2" + sexe_eng_2..Valeur)
+
+SI (SAI_Nom_Enqueteur_2..Valeur = "" ) ALORS
+	//Info("Nom Enquêter 2 mais sexe sélectionner ! \n Valeur sexe à été remise à zéro !")
+	n_sexe2 = ""
+	//retour
+SINON SI (sexe_eng_2..Valeur= -1 ET SAI_Nom_Enqueteur_2..Valeur <> "" )
+	
+	Info("Nom Enquêter Non vide !. Veuillez S.V.P sélectionner le sexe de l’enquêteur 2 !")
+	RETOUR
+SINON
+	n_sexe2 = sexe_eng_2..Valeur
+FIN
+
+NewContent += """nom_enq_2"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_2..Valeur
+NewContent += ""","
+
+NewContent += """sexe_enq_2"":"
+NewContent += """"
+NewContent += Majuscule(Gauche(n_sexe2,1)) + Milieu(n_sexe2,2)
+NewContent += ""","
+
+
+
+
+SI (SAI_Nom_Enqueteur_3..Valeur = "" ) ALORS
+	//Info("Nom Enquêter 3 mais sexe sélectionner ! \n Valeur sexe à été remise à zéro !")
+	n_sexe3 = ""
+	//retour
+SINON SI (sexe_eng_3..Valeur= -1 ET SAI_Nom_Enqueteur_3..Valeur <> "" )
+	
+	Info("Nom Enquêter Non vide !. Veuillez S.V.P sélectionner le sexe de l’enquêteur 3 !")
+	RETOUR
+SINON
+	n_sexe3 = sexe_eng_3..Valeur
+FIN
+
+NewContent += """nom_enq_3"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_3..Valeur
+NewContent += ""","
+
+NewContent += """sexe_enq_3"":"
+NewContent += """"
+NewContent += Majuscule(Gauche(n_sexe3,1)) + Milieu(n_sexe3,2)
+NewContent += ""","
+
+
+
+
+SI (SAI_Nom_Enqueteur_4 = "" ) ALORS
+	//Info("Nom Enquêter 4 mais sexe sélectionner ! \n Valeur sexe à été remise à zéro !")
+	n_sexe4 = ""
+	//retour
+SINON SI (sexe_eng_4..Valeur= -1 ET SAI_Nom_Enqueteur_4..Valeur <> "" )
+	
+	Info("Nom Enquêter Non vide !. Veuillez S.V.P sélectionner le sexe de l’enquêteur 4 !")
+	RETOUR
+SINON
+	n_sexe4 = sexe_eng_4..Valeur
+FIN
+
+NewContent += """nom_enq_4"":"
+NewContent += """"
+NewContent += SAI_Nom_Enqueteur_4..Valeur
+NewContent += ""","
+
+NewContent += """sexe_enq_4"":"
+NewContent += """"
+NewContent += Majuscule(Gauche(n_sexe4,1)) + Milieu(n_sexe4,2)
+NewContent += ""","
+
+
+
+NewContent += """tres_grpm"":"
+NewContent += """"
+NewContent += SAI_Trésorier..Valeur
+NewContent += ""","
+
+
+NewContent += """zone_int"":"
+NewContent += """"
+NewContent += SAI_Zone_d_intervention..Valeur
+NewContent += ""","
+
+
+NewContent+="""zz"":"""  +  RAD_visible_siege..Valeur   +""","
+NewContent+="""zzzeaupurfem"":"""  +  SAI_Femme_purif..Valeur   +""","
+NewContent+="""zzzeaupurhom"":"""  +  SAI_Homme_purif..Valeur   +""","
+NewContent+="""zzzeaupurifie"":"""  +  RAD_eau_purifie..Valeur   +""","
+NewContent+="""zzzgrc"":"""  +  RAD_grc..Valeur   +""","
+NewContent+="""zzzgrcfem"":"""  +  SAI_grc_femme..Valeur   +""","
+NewContent+="""zzzgrchom"":"""  +  SAI_grc_homme..Valeur   +""","
+NewContent+="""zzzhameau"":"""  +  SAI_hameau..Valeur   +""","
+NewContent+="""zzzinfonutr"":"""  +  RAD_info_nutrition..Valeur   +""","
+NewContent+="""zzzinfonutrannee"":"""  +  SAI_annee..Valeur  +""","
+NewContent+="""zzztype"":"""  +  zztype..Valeur   +""","
+NewContent+="""zzzzong"":"""  +  zzzzong..Valeur   +""","
+NewContent+="""zzzzzid_ap"":"""  +  zzzzzid_ap..Valeur   +""","
+NewContent+="""zzzzzzfemnutr"":"""  +  ""   +""","
+NewContent+="""zzzzzzhomnutr"":"""  +  ""   +""","
+NewContent+="""zzzzzzzagroecologie"":"""  +  ""   +""","
+NewContent+="""zzzzzzzf26"":"""  +  ""   +""","
+NewContent+="""zzzzzzzm26"":"""  +  ""   +""","
+NewContent+="""zzzzzzznbmenage"":" +""+""" "
+
+
+
+//NewContent+="""zzzzzid_ap"":"""  +  zzzzzid_ap..Valeur   +""" "
+
+
+
+
+
+NewContent += """}"
+
+
+//Info("tabCat[COMB_Catégorie..Valeur] : " + tabCat[COMB_Catégorie..Valeur])
+
+//Info("COMB_Catégorie..Valeur : " + COMB_Catégorie..Valeur)
+
+maRESTRequette.Contenu = ChaîneVersUTF8(NewContent)
+//maRESTRequette.Contenu = NewContent
+
+//info(maRESTRequette.Contenu)
+
+//info("id reseaux : "+ SAI_reseaux..Valeur)
+
+laRéponse = RESTEnvoie(maRESTRequette)
+
+Info("maRESTRequette : " +NewContent)
+
+SI ErreurDétectée OU laRéponse.Contenu = "null" ALORS
+	Info("Impossible de communiquer avec le serveur !. Base de données 1 vide ou n'existe pas!")
+	RETOUR
+SINON
+	Info("Mise à jour effectuée avec succès !")
+	RETOUR
+FIN
+
+
+
+
+//Info("id a comme valeur : "+ newUrl)
+
+//vJSON est un Variant = JSONVersVariant(laRéponse.Contenu)
+//
+//POUR TOUT e DE vJSON
+//	Info(e)
+//FIN
+
+
+

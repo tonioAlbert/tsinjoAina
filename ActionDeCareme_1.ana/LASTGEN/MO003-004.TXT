@@ -1,0 +1,9 @@
+//MO003-004.TXT ANA00003 TO ANA00004
+groupement		EXT	ACM	nouvelle extension  ACM
+ong		EXT	ACM	nouvelle extension  ACM
+reseaux		EXT	ACM	nouvelle extension  ACM
+utilisateurs		EXT	ACM	nouvelle extension  ACM
+groupement		FRN		
+ong		FRN		
+reseaux		FRN		
+utilisateurs		FRN		

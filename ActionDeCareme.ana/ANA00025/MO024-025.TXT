@@ -1,0 +1,5 @@
+//MO024-025.TXT ANA00024 TO ANA00025
+reseaux		TAR	1487	nouvelle taille enregistrement : 1487
+reseaux	activite_desc	TAI+	55	la rubrique activite_desc a comme nouvelle taille 256 au lieu de 201
+reseaux	ong	TAI-	175	la rubrique ong a comme nouvelle taille 26 au lieu de 201
+reseaux	projet	RUB+		projet est une nouvelle rubrique

@@ -1,0 +1,39 @@
+
+zzzzzzfemnutr
+
+zzzzzzhomnutr
+		
+agroecologie
+			
+f26
+			
+m26
+			
+nombre_menage
+			
+			
+agro_fem
+			
+			
+agro_hom
+
+
+
+
+			
+			COL_femme_nutr = REQ_SELECT_ALL_GROUPEMENT.zzzzzzfemnutr
+			COL_homme_nutr = REQ_SELECT_ALL_GROUPEMENT.zzzzzzhomnutr
+			
+			COL_agro_écologie = REQ_SELECT_ALL_GROUPEMENT.agroecologie
+			
+			COL_f_26 = REQ_SELECT_ALL_GROUPEMENT.f26
+			
+			COL_m_26 = REQ_SELECT_ALL_GROUPEMENT.m26
+			
+			COL_Nombre_Ménage = REQ_SELECT_ALL_GROUPEMENT.nombre_menage
+			
+			
+			COL_Femme_Agro = REQ_SELECT_ALL_GROUPEMENT.agro_fem
+			
+			
+			COL_Homme_Agro = REQ_SELECT_ALL_GROUPEMENT.agro_hom

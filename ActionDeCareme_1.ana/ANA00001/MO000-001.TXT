@@ -1,0 +1,5 @@
+//MO000-001.TXT ANA00000 TO ANA00001
+groupement		NFI		nouveau fichier
+ong		NFI		nouveau fichier
+reseaux		NFI		nouveau fichier
+utilisateurs		NFI		nouveau fichier

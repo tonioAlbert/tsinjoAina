@@ -1,0 +1,2 @@
+//MO028-029.TXT ANA00028 TO ANA00029
+groupement__2		FCNX-	Connexion HFSQL Classic	

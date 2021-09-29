@@ -1,0 +1,3 @@
+//MO012-013.TXT ANA00012 TO ANA00013
+		VIEW-	PURGES	La vue PURGES a été supprimée.
+		VIEW-	MaVue	La vue MaVue a été supprimée.

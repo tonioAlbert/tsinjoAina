@@ -1,0 +1,11 @@
+//MO007-008.TXT ANA00007 TO ANA00008
+groupement		TAR	3425	nouvelle taille enregistrement : 3425
+groupement	eau_pur_fem	RUB+		eau_pur_fem est une nouvelle rubrique
+groupement	eau_pur_hom	RUB+		eau_pur_hom est une nouvelle rubrique
+groupement	eau_purifie	RUB+		eau_purifie est une nouvelle rubrique
+groupement	grc_fem	RUB+		grc_fem est une nouvelle rubrique
+groupement	grc_hom	RUB+		grc_hom est une nouvelle rubrique
+groupement	grc	RUB+		grc est une nouvelle rubrique
+groupement	hameau	RUB+		hameau est une nouvelle rubrique
+groupement	info_nutr	RUB+		info_nutr est une nouvelle rubrique
+groupement	info_nutr_annee	RUB+		info_nutr_annee est une nouvelle rubrique

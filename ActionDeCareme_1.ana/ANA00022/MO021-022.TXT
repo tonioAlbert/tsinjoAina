@@ -1,0 +1,3 @@
+//MO021-022.TXT ANA00021 TO ANA00022
+groupement		TAR	4549	nouvelle taille enregistrement : 4549
+groupement	nomGroupementSansPrefix	RUB+		nomGroupementSansPrefix est une nouvelle rubrique

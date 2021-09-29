@@ -1,0 +1,4 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+reseaux		TAR	1607	nouvelle taille enregistrement : 1607
+reseaux	nom	TAI+	100	la rubrique nom a comme nouvelle taille 201 au lieu de 101
+reseaux	ong	TAI+	175	la rubrique ong a comme nouvelle taille 201 au lieu de 26

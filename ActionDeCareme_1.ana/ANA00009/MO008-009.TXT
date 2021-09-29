@@ -1,0 +1,2 @@
+//MO008-009.TXT ANA00008 TO ANA00009
+groupement	DateOneline	NNR	DateOnliene	ATTENTION : la rubrique DateOnliene a pour nouveau nom DateOneline

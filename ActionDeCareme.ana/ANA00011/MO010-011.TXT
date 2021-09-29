@@ -1,0 +1,3 @@
+//MO010-011.TXT ANA00010 TO ANA00011
+utilisateurs		TAR	976	nouvelle taille enregistrement : 976
+utilisateurs	prefix	RUB+		prefix est une nouvelle rubrique

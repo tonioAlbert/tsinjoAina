@@ -1,0 +1,3 @@
+//MO019-020.TXT ANA00019 TO ANA00020
+groupement		TAR	4274	nouvelle taille enregistrement : 4274
+groupement	agroannee	RUB+		agroannee est une nouvelle rubrique

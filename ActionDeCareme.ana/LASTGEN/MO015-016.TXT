@@ -1,0 +1,4 @@
+//MO015-016.TXT ANA00015 TO ANA00016
+utilisateurs		TAR	1177	nouvelle taille enregistrement : 1177
+utilisateurs	prefix_lieu	NNR	prefix	ATTENTION : la rubrique prefix a pour nouveau nom prefix_lieu
+utilisateurs	login_sans_prefix	RUB+		login_sans_prefix est une nouvelle rubrique

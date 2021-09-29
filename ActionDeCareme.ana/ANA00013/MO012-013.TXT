@@ -1,0 +1,6 @@
+//MO012-013.TXT ANA00012 TO ANA00013
+reseaux		TAR	1351	nouvelle taille enregistrement : 1351
+reseaux	activite_desc	RUB+		activite_desc est une nouvelle rubrique
+reseaux	date_de_cre	RUB+		date_de_cre est une nouvelle clé
+reseaux	intervention_agr_annee	RUB+		intervention_agr_annee est une nouvelle rubrique
+reseaux	acces_eau	RUB-		la rubrique acces_eau est supprimée

@@ -1,0 +1,2 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+groupement	dateautonomisation	CLEN*		la rubrique dateautonomisation est maintenant une clé

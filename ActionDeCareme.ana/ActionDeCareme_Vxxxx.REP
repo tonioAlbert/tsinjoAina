@@ -1,0 +1,7 @@
+;PCSoft - Hyper File V7.00 - REP V7.00
+;Do not edit. Please use specific tools.
+ANALYSISGUID=1	;Analysis GUID
+LOCALIZATION_UTF8=3C86CB7909AF4F40AB85972BE266E198	utilisateurs	C:\Mes Projets\ActionDeCareme_Vxxxx\Bdd\utilisateurs.FIC
+LOCALIZATION_UTF8=AE6B4CAFE511451FAEBCEC62B2DFFDC4	groupement	C:\Mes Projets\ActionDeCareme_Vxxxx\Bdd\groupement.FIC
+LOCALIZATION_UTF8=336666C4CFE0465A89D4977F4E8BA4BD	ong	C:\Mes Projets\ActionDeCareme_Vxxxx\Bdd\ong.fic
+LOCALIZATION_UTF8=B322B7B4AC7D498F89F849C9E1B7B5CA	reseaux	C:\Mes Projets\ActionDeCareme_Vxxxx\Bdd\reseaux.fic

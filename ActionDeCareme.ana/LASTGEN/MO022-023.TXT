@@ -1,0 +1,5 @@
+//MO022-023.TXT ANA00022 TO ANA00023
+utilisateurs		TAR	1135	nouvelle taille enregistrement : 1135
+utilisateurs	dateImport	RUB+		dateImport est une nouvelle rubrique
+utilisateurs	nom	RUB-		la clé nom est supprimée
+utilisateurs	prenom	RUB-		la rubrique prenom est supprimée

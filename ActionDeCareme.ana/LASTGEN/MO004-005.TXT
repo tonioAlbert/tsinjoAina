@@ -1,0 +1,4 @@
+//MO004-005.TXT ANA00004 TO ANA00005
+groupement		TAR	2895	nouvelle taille enregistrement : 2895
+groupement	date_de_cre	CNW	Date (aaaammjj)$Chaîne	la rubrique date_de_cre a pour nouveau type Date (aaaammjj)
+groupement	dateautonomisation	CNW	Date (aaaammjj)$Chaîne	la rubrique dateautonomisation a pour nouveau type Date (aaaammjj)

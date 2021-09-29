@@ -1,0 +1,4 @@
+//MO019-020.TXT ANA00019 TO ANA00020
+groupement		TAR	5135	nouvelle taille enregistrement : 5135
+groupement	femme_desend	CNW	Entier sur 4 octets$Chaîne	la rubrique femme_desend a pour nouveau type Entier sur 4 octets
+groupement	homme_desend	CNW	Entier sur 4 octets$Chaîne	la rubrique homme_desend a pour nouveau type Entier sur 4 octets

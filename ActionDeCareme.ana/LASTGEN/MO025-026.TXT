@@ -1,0 +1,3 @@
+//MO025-026.TXT ANA00025 TO ANA00026
+reseaux		TAR	1231	nouvelle taille enregistrement : 1231
+reseaux	activite	RUB-		la rubrique activite est supprimée

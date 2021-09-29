@@ -1,0 +1,6 @@
+//MO011-012.TXT ANA00011 TO ANA00012
+groupement		TAR	3620	nouvelle taille enregistrement : 3620
+groupement	zz	RUB+		zz est une nouvelle rubrique
+groupement	eau_purifie	CNW	Chaîne$Entier sur 4 octets	la rubrique eau_purifie a pour nouveau type Chaîne
+groupement	zztype	NNR	deleted	ATTENTION : la clé deleted a pour nouveau nom zztype
+groupement	zztype	CNW	Chaîne$Booléen	la rubrique zztype a pour nouveau type Chaîne

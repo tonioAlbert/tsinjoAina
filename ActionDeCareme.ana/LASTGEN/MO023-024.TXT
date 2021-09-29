@@ -1,0 +1,3 @@
+//MO023-024.TXT ANA00023 TO ANA00024
+utilisateurs		TAR	1084	nouvelle taille enregistrement : 1084
+utilisateurs	type_user	RUB-		la clé type_user est supprimée

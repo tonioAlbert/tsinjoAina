@@ -1,0 +1,3 @@
+//MO010-011.TXT ANA00010 TO ANA00011
+groupement		TAR	4223	nouvelle taille enregistrement : 4223
+groupement	HeureOneline	CNW	Heure (hhmm)$Chaîne	la rubrique HeureOneline a pour nouveau type Heure (hhmm)

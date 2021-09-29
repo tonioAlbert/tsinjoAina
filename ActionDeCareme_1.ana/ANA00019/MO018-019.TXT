@@ -1,0 +1,2 @@
+//MO018-019.TXT ANA00018 TO ANA00019
+PURGES	zz	VWRUB+		La rubrique zz a été ajoutée.
